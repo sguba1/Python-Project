@@ -1,4 +1,5 @@
 import NavigateAndLogin
+import Logout
 import CommonFunctions
 import os
 import time
@@ -39,5 +40,6 @@ def addEmployee():
     CommonFunctions.clickElement(employeesave_button)
 
     time.sleep(10)
+    Logout.logout(driver)
 
 addEmployee()
